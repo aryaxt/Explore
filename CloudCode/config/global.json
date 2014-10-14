@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "Explore": {
+            "applicationId": "tNn0p6pBjYzIJdfC8slhNqKYcl47jKZQ3Jrvu1KO", 
+            "masterKey": "fpa46LpK4kFNm1oUR3irH8TFPuxKP7grMCXOxUad"
+        }, 
+        "_default": {
+            "link": "Explore"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.0"
+    }
+}
