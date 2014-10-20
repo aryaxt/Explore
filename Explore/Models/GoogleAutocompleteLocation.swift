@@ -8,7 +8,7 @@
 
 import Foundation
 
-class AutocompleteLocation {
+class GoogleAutocompleteLocation {
 
     var name: String
     var placeId: String

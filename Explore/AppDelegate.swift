@@ -20,8 +20,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
         PFFacebookUtils.initializeFacebook()
         
-        var category = Category()
-        category.name = "Sport"
+        // TODO Make this an extension
+        var menu = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MenuViewContorller") as UIViewController
+        SlideNavigationController.sharedInstance().leftMenu = menu
+        
+//        GoogleLocationService().fetchLocations("1190 mission street", block: { (locations, error) -> Void in
+//            var location = locations![0]
+//            
+//            GoogleLocationService().fetchLocation(location.placeId, block: { (location, error) -> Void in
+//                
+//            })
+//        })
+        
+        
+        
+//        var category = Category()
+//        category.name = "Sport"
 
 //        createEvent(category, activityName: "Biking", name: "Biking in the desert", url: "http://medinatours.net/wp-content/uploads/2014/07/biking.jpg")
 //        createEvent(category, activityName: "Hiking", name: "Hiking in the desert", url: "http://festgift.com/wp-content/uploads/2014/08/Labor-Day-Activities-Hiking-on-Labor-Day-Weekend.jpg")
@@ -37,14 +51,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         activity.category = category
         
         var location = Location()
-        location.street1 = "1190 mission"
+        location.street = "1190 mission"
         location.city = "San Francisco"
         location.country = "Unitest States"
         location.state = "CA"
         
         var event = Event()
         event.name = name
-        event.date = NSDate()
+        event.startTime = NSDate()
+        event.endTime = NSDate()
         event.activity = activity
         event.location = location
         event.creator = User.currentUser()

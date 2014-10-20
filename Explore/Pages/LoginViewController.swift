@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LoginViewController: UIViewController {
+class LoginViewController: BaseViewController {
     
     lazy var authService = AuthenticationService()
     

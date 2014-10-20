@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StickyHeaderView" customModule="Explore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="42"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GP-Vs-1F6">
+                    <rect key="frame" x="0.0" y="5" width="42" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="5" id="m7c-Sz-V56"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="5" id="pH4-dI-bxl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="m7c-Sz-V56"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="3GP-Vs-1F6" secondAttribute="centerY" id="2R9-fA-Y0e"/>
+                <constraint firstAttribute="bottom" secondItem="3GP-Vs-1F6" secondAttribute="bottom" constant="21" id="2UY-G3-jNq"/>
+                <constraint firstAttribute="trailing" secondItem="3GP-Vs-1F6" secondAttribute="trailing" constant="20" symbolic="YES" id="BmO-l4-cED"/>
+                <constraint firstAttribute="bottom" secondItem="3GP-Vs-1F6" secondAttribute="bottom" constant="5" id="OIA-40-MLt"/>
+                <constraint firstItem="3GP-Vs-1F6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QP5-XY-5V4"/>
+                <constraint firstItem="3GP-Vs-1F6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Tzt-v2-B5V"/>
+                <constraint firstItem="3GP-Vs-1F6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fwJ-Lm-CSz"/>
+                <constraint firstItem="3GP-Vs-1F6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="5" id="ie8-tx-G1I"/>
+                <constraint firstItem="3GP-Vs-1F6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lmq-gZ-g1d"/>
+                <constraint firstItem="3GP-Vs-1F6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oOA-jn-0o5"/>
+                <constraint firstAttribute="bottom" secondItem="3GP-Vs-1F6" secondAttribute="bottom" constant="5" id="t4L-UK-ppl"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="2R9-fA-Y0e"/>
+                    <exclude reference="2UY-G3-jNq"/>
+                    <exclude reference="BmO-l4-cED"/>
+                    <exclude reference="QP5-XY-5V4"/>
+                    <exclude reference="fwJ-Lm-CSz"/>
+                    <exclude reference="ie8-tx-G1I"/>
+                    <exclude reference="oOA-jn-0o5"/>
+                    <exclude reference="t4L-UK-ppl"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="titleLabel" destination="3GP-Vs-1F6" id="PDU-TW-chn"/>
+            </connections>
+            <point key="canvasLocation" x="356" y="256"/>
+        </view>
+    </objects>
+</document>

@@ -26,4 +26,16 @@ extension PFQuery {
             }
         }
     }
+    
+    func findObjectInBackgroundWithCompletion <T> (type:T.Type, closure: (T?, NSError?) -> Void) {
+        findObjectsInBackgroundWithBlock { (result, error) in
+            if (error != nil) {
+                closure(nil, error)
+            }
+            else {
+                var castedObject = result as T?
+                closure(castedObject, nil)
+            }
+        }
+    }
 }

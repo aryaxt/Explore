@@ -12,13 +12,14 @@ class Event: PFObject, PFSubclassing {
     
     @NSManaged var name: String
     @NSManaged var detail: String
-    @NSManaged var date: NSDate
+    @NSManaged var startTime: NSDate
+    @NSManaged var endTime: NSDate
     @NSManaged var canceled: NSNumber
     @NSManaged var attendeeCount: NSNumber
     @NSManaged var creator: User
     @NSManaged var activity: Activity
     @NSManaged var location: Location
-    @NSManaged var attendees: PFRelation
+    @NSManaged var comments: PFRelation
     @NSManaged var photo: PFFile
     
     class func parseClassName() -> String {
